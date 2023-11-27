@@ -1,0 +1,26 @@
+[
+  {
+    "username": "test",
+    "password": "azerty"
+  },
+  {
+    "email": "ahmadjaada22@gmail.com",
+    "password": "1234",
+    "username": "hamza jaada"
+  },
+  {
+    "email": "aymangassi22@gmail.com",
+    "password": "1234",
+    "username": "hamza jaada "
+  },
+  {
+    "email": "abdelilahgallati22@gmail.com",
+    "password": "1234",
+    "username": "abdilah el gallati"
+  },
+  {
+    "email": "kaka@gmail.com",
+    "password": "1234",
+    "username": "kaka"
+  }
+]

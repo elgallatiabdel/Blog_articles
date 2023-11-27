@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+  }
+  
+  .container {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    margin-left: 20px; /* Ajout de la marge à gauche */
+    margin-right: 20px; /* Ajout de la marge à droite */
+  }
+  
+  label {
+    display: block;
+    margin: 20px 0 5px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: calc(100% - 20px); /* Ajuster la largeur en tenant compte de la marge */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: calc(100% - 20px); /* Ajuster la largeur en tenant compte de la marge */
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style pour les erreurs de validation si nécessaire */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .titre{
+    color: #4caf50;
+    text-align: center;
+  }
+  
+  /* Ajouter des styles spécifiques au formulaire de registre si nécessaire */
+  

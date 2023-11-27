@@ -1,0 +1,39 @@
+doctype html 
+
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title welcome  
+        link(rel="stylesheet", href="/styles/welcome.css")
+    body 
+        h1 welcome To the Blog page
+        if username   
+            h1 Good afternoon #{username}
+            a(href="/logout") logout  
+            a(href="/AddArticle") Add article
+        else 
+            a(href="/login") login  
+            a(href="/AddArticle") Register
+
+        ul   
+            each i in articles
+                li 
+                    h3 #{i.title}
+                    p #{i.content}
+                    
+                    if(i.username == username) 
+                        a(href=`/edit/${i.id}`) edit 
+                        button(onclick=`deleteArticle(${i.id})`) delete   
+        
+        script.
+            function deleteArticle(articleId) {
+                if (confirm("Are you sure you want to delete this article?")) {
+                    fetch(`/delete/${articleId}`, { method: "POST" })
+                .then(() => {
+                    location.reload();
+                })
+                .catch((error) => {
+                    console.error("Error deleting article: " + error);
+                });
+            }}

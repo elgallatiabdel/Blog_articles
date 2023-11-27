@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Add Article
+    link(rel="stylesheet", href="/styles/AddArticle.css")
+  body
+    h1 Add Article
+
+    form(action="/add-article", method="POST")
+      label(for="title") Article Title:
+      input(type="text", id="title", name="title", required)
+      br
+
+      label(for="content") Article Content:
+      textarea(id="content", name="content", rows="4", required)
+      br
+
+      button(type="submit") Ajoute

@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Registre 
+        link(rel="stylesheet", href="/styles/register.css")
+    body
+        h1.titre REGISTER BLOG
+        form(action="/registre", method="post")
+            label Nom complet:
+                input(type="text", name="username", required=true)
+                br
+
+            label Email:
+                input(type="email", name="email", required=true)
+                br
+            label Password:
+                input(type="password", name="passwd", required=true)
+                br
+            label Confirm Password:
+                input(type="password", name="confirmPasswd", required=true)
+                br
+            input(type="submit", value="submit")
+        a(href="/login") Login
